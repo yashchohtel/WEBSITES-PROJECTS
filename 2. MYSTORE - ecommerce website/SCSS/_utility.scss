@@ -1,0 +1,167 @@
+/* =-=-=-=-=-=-=-=-=-=| GOOGLE FONTS |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+/* =-=-=-=-=-=-=-=-=-=| ROOT VARIABLE |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+:root {
+
+    // typography
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+    // colors for foreground & background
+    --bg-black-1: #111820;
+    --bg-black-2: #1e272e;
+    --bg-black-3: #95a5a6;
+    --bg-black-4: #404956;
+
+    --bg-white-1: #ffffff;
+    --bg-white-2: #f2f2f2;
+
+    --bg-yellow-1: #fffa65;
+    --bg-yellow-2: #c3d458;
+
+    // text colors
+    --t-white-1: #d5d5d5;
+    --t-white-2: #ffffff;
+
+    --t-black-1: #111820;
+
+    --t-gray-1: #8b8b8b;
+    --t-gray-2: #3d3d3d;
+
+    --t-red-1: #d90021;
+    --t-red-2: #ef3636;
+
+    // transition
+    --transition-02S: all 0.1s ease;
+    --transition-02S: all 0.2s ease;
+    --transition-03S: all 0.3s ease;
+
+    // box shadow 
+    --shadow-1: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+
+/* =-=-=-=-=-=-=-=-=-=| REFORMATING |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--primary-font);
+    background: var(--bg-white-2);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+// scroll bar
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--bg-black-2);
+    // border-left: 1px solid var(--bg-white-1);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #cccccc;
+    border: 2.5px solid var(--bg-black-2);
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 70%);
+}
+
+/* =-=-=-=-=-=-=-=-=-=| REUSABLE CLASSES |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+// container
+.container {
+    width: 95%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+// PAGGINATION
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 35px 0;
+
+    a {
+        background-color: var(--bg-black-4);
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 600;
+        font-size: 1rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 35px;
+        width: 40px;
+        transition: var(--transition-02S);
+
+        &:hover{
+            background: var(--bg-black-1);
+        }
+
+        i {
+            font-size: 1.2rem;
+        }
+
+    }
+
+}
+
+/* =-=-=-=-=-=-=-=-=-=| OWL CAROSEL |=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+
+// hero section carousel
+
+.hero-banner-container {
+
+    .owl-theme .owl-nav.disabled+.owl-dots {
+        margin-top: -30px;
+        position: relative;
+    }
+
+    .owl-theme .owl-dots .owl-dot span {
+        background: var(--bg-white-2);
+    }
+
+    .owl-theme .owl-dots .owl-dot.active span {
+        background: var(--bg-black-2);
+    }
+
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background: var(--bg-black-1);
+    }
+
+}

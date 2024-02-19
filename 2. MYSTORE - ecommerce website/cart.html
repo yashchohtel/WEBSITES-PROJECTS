@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystore - cart</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- FONTAWESOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CUSTOM CSS FILE LINK -->
+    <link rel="stylesheet" href="/SCSS/style.css">
+
+</head>
+
+<body>
+
+    <!-- =-=-=-=-=-=-=-=-=-=| HEADER |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  -->
+    <header class="header">
+
+        <!-- header-bottom -->
+        <div class="navitacion header-bottom">
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- all department links -->
+                <button class="all-department">
+
+                    <ion-icon name="list-outline"></ion-icon>
+                    <span>All Department</span>
+
+                    <!-- all department submenu -->
+                    <div class="all-depart-submenu">
+
+                        <!-- all depart submenu item -->
+                        <a href="#">Women's clothing</a>
+                        <a href="#">Men's clothing</a>
+                        <a href="#">Kids's clothing</a>
+                        <a href="#">Accescries</a>
+                        <a href="#">Footware</a>
+                        <a href="#">Electronics</a>
+                        <a href="#">Sports</a>
+                        <a href="#">Home decore</a>
+
+                    </div>
+
+                </button>
+
+                <!-- nav links -->
+                <nav class="nav">
+
+                    <!-- nav links -->
+                    <ul>
+                        <li><a href="index.html">home</a></li>
+                        <li><a href="ourstore.html">ourstore</a></li>
+                        <li><a href="blog.html">blogs</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                    </ul>
+
+                </nav>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- =-=-=-=-=-=-=-=-=-=| NAVIGATION SECTION STARTS |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  -->
+
+    <!-- navigation for mobile in bottom -->
+    <div class="mobile-nav-bottom">
+
+        <!-- icon box / link -->
+        <a href="index.html">
+            <ion-icon name="home-outline"></ion-icon>
+        </a>
+
+        <!-- icon box / link -->
+        <a href="wishlist.html">
+            <ion-icon name="heart-outline"></ion-icon>
+
+            <!-- count -->
+            <span class="count">3</span>
+
+        </a>
+
+        <!-- icon box / link -->
+        <a href="cart.html" class="active">
+            <ion-icon name="cart"></ion-icon>
+        </a>
+
+        <!-- icon box / link -->
+        <a href="profile.html">
+            <ion-icon name="person-outline"></ion-icon>
+        </a>
+
+        <!-- icon box / link -->
+        <a href="menus.html">
+            <ion-icon name="grid-outline"></ion-icon>
+        </a>
+
+    </div>
+
+    <!-- =-=-=-=-=-=-=-=-=-=| WISHLIST HEADER |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  -->
+
+    <!-- wishlist header -->
+    <div class="wishlist-header">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- header left -->
+            <div class="header-left">
+                <h3 class="heading">YOUR CART</h3>
+            </div>
+
+            <!-- header right -->
+            <div class="header-right">
+                <a href="">view list</a>
+                <span><i class="fa-solid fa-ellipsis"></i></span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- =-=-=-=-=-=-=-=-=-=| WISHLIST ITEM WRAPPER |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  -->
+
+    <!-- wishlist item wrapper -->
+    <div class="wishlist-item-wrapper container">
+
+        <!-- wishlist item -->
+        <div class="wishlist-item">
+
+            <!-- image -->
+            <div class="image">
+                <img src="/IMAGE/products/png/jacket-4.png" alt="">
+            </div>
+
+            <!-- product info -->
+            <div class="product-info">
+                <h4 class="name">denim jacket</h4>
+                <p class="stock">In stock</p>
+                <p class="free-ship">Alligable for free shiping</p>
+                <p class="color"><span>color :</span> blue</p>
+                <p class="size"><span>size : xl</span></p>
+                <p class="price">₹ 1,599</p>
+                <button class="cart">buy now</button>
+                <button class="cart">remove</button>
+
+            </div>
+
+
+        </div>
+
+        <!-- wishlist item -->
+        <div class="wishlist-item">
+
+            <!-- image -->
+            <div class="image">
+                <img src="/IMAGE/products/png/shirt-1.png" alt="">
+            </div>
+
+            <!-- product info -->
+            <div class="product-info">
+                <h4 class="name">Casual shirt</h4>
+                <p class="stock">In stock</p>
+                <p class="free-ship">Alligable for free shiping</p>
+                <p class="color"><span>color :</span> white</p>
+                <p class="size"><span>size : xl</span></p>
+                <p class="price">₹ 2,999</p>
+                <button class="cart">buy now</button>
+                <button class="remove">remove</button>
+
+            </div>
+
+
+
+        </div>
+
+
+        <!-- wishlist item -->
+        <div class="wishlist-item">
+
+            <!-- image -->
+            <div class="image">
+                <img src="/IMAGE/products/png/jacket-5.png" alt="">
+            </div>
+
+            <!-- product info -->
+            <div class="product-info">
+                <h4 class="name">Smart watch</h4>
+                <p class="stock">In stock</p>
+                <p class="free-ship">Alligable for free shiping</p>
+                <p class="color"><span>color :</span> brown</p>
+                <p class="size"><span>size : xxl</span></p>
+                <p class="price">₹ 5,599</p>
+                <button class="cart">buy now</button>
+                <button class="remove">remove</button>
+
+            </div>
+
+
+        </div>
+
+        <!-- cart action button -->
+        <div class="wishlist-item wishlist-act-btn">
+            <div class="subtotal">
+                <p class="total">total</p>
+                <p class="price">₹ 10,197</p>
+            </div>
+            <button class="buy-now">proceed to buy</button>
+        </div> 
+
+    </div>
+
+    <!-- =-=-=-=-=-=-=-=-=-=| NEWS LETTER OVERLAY SECTION |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  -->
+
+    <section class="newsletter-overlay">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- newsletter wrapper -->
+            <div class="news-letter-wrapper">
+
+                <div class="text">
+                    <h3>Sign Up For Newsletters</h3>
+                    <p>Get E-mail Updates About Our Latest Shop And <span>Special Offers.</span></p>
+                </div>
+
+                <div class="form">
+                    <input type="email" placeholder="enter your email">
+                    <button>Sign Up</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =-=-=-=-=-=-=-=-=-=| FOOTER SECTION |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  -->
+
+    <!-- footer section -->
+    <div class="footer">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- footer wrapper -->
+            <div class="footer-wrapper">
+
+                <!-- contact -->
+                <div class="content-links section">
+                    <h3>Contact Us</h3>
+                    <a href="" class="address"> <span>address: </span> Mumbai east boribali sector 19 484001 india</a>
+                    <a href="" class="number"><span>Phone: </span> +91 48928-29018</a>
+                    <a href="" class="mail"><span>Email: </span> mysotre@support.com</a>
+
+                    <div class="social-link">
+                        <a href="" class="icon-box"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="" class="icon-box"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="" class="icon-box"><i class="fa-brands fa-pinterest-p"></i></a>
+                        <a href="" class="icon-box"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="" class="icon-box"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+
+                </div>
+
+                <!-- policiy -->
+                <div class="policiy section">
+                    <h3>policies</h3>
+                    <ul>
+                        <li>Pricicy policy</li>
+                        <li>shipping policy</li>
+                        <li>return policy</li>
+                        <li>refund policy</li>
+                        <li>term and conditions</li>
+                    </ul>
+                </div>
+
+                <!-- quick links -->
+                <div class="quick-link section">
+                    <h3>quick links</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Delivery Information</li>
+                        <li>contact Us</li>
+                        <li>Track My Order</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+
+                <!-- our app -->
+                <div class="our-app section">
+                    <h3>install app</h3>
+                    <p>From App Store Or Google Play</p>
+                    <div class="app">
+                        <img src="/IMAGE/pay/play.jpg" alt="">
+                        <img src="/IMAGE/pay/app.jpg" alt="">
+                    </div>
+                    <p>Secured Payment Gateways</p>
+                    <div class="pay">
+                        <img src="/IMAGE/pay/pay.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- copyright -->
+        <p class="copyright">All rights reserved <span><i class="fa-regular fa-copyright"></i></span> 2023 </p>
+
+    </div>
+
+
+
+    <!-- =-=-=-=-=-=-=-=-=-=| JAVASCRIPT FILES LINKS |-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=  -->
+
+    <!-- JQUERY CDN FILE LINK -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ICONIC.IO ICON LIBRARY JAVASCRIPT CDN FILE LINK -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- CUSTOM JAVASCRIPT FILE LINK -->
+    <script src="/JAVASCRIPT/script.js"></script>
+
+
+</body>
+
+</html>
