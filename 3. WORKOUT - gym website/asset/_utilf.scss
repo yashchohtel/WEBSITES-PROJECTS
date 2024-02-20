@@ -1,0 +1,169 @@
+/* ---- GOOGLE FONTS ------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* ---- CSS VARIABLE ------------------- */
+
+
+:root {
+
+    /* ------ Colors ------ */
+    --first-color: #abdf3a;
+    --first-color-light: #d9fd8b;
+    --first-color-alt: #a3d733;
+    --first-color-dark: #9dd02f;
+    --first-color-gray: #a5a99e;
+    --white-color: #ffffff;
+    --title-color: #fafafa;
+    --btn-normal-bg-color: #f1efef;
+    --title-color-black: #1e201d;
+    --text-color: #b5baba;
+    --text-color-light: #a2a9a9;
+    --body-color: #121717;
+
+    /* ------ Font and typography ------ */
+
+    --body-font: 'Red Hat Display', sans-serif;
+    --second-font: 'Kaushan Script', cursive;
+}
+
+/* ---- DEFAULT FORMATING ------------------- */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input {
+    font-family: var(--body-font);
+}
+
+body {
+    background-color: var(--body-color);
+    user-select: none;
+    height: 5000px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121717af;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b5babaab;
+    border-radius: 5px;
+}
+
+/* ---- REUSABLE COMPONENTS ------------------- */
+
+.container {
+    max-width: 1152px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 4.5rem 0;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+/* BUTTONS */
+
+.btn {
+    border: 3px solid transparent;
+    padding: 11px 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1.12rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+
+    i {
+        font-size: 1.3rem;
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        transform: translateX(.45rem);
+    }
+
+}
+
+.primary-btn {
+    background-color: var(--first-color-dark);
+    border-color: var(--first-color);
+    color: var(--title-color-black);
+
+    &:hover {
+        background-color: var(--first-color-alt);
+        border-color: var(--first-color);
+    }
+}
+
+.secondary-btn {
+    background-color: var(--btn-normal-bg-color);
+    color: var(--title-color-black);
+
+    &:hover {
+        background-color: var(--first-color-alt);
+        border-color: var(--first-color);
+    }
+
+}
+
+/* link active class */
+#active {
+    color: var(--first-color-alt);
+}
+
+/* scroll header css */
+
+.header-scrolled {
+    background-color: var(--body-color) !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+

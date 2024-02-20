@@ -1,0 +1,213 @@
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* HEADER SECTION START  */
+
+.header {
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transition: background .3s;
+    padding: 1.6rem 0;
+
+    .navigation_container {
+        height: 3.2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav_logo {
+            display: flex;
+            align-items: center;
+            gap: 0.9rem;
+
+            i {
+                color: var(--first-color);
+                font-size: 1.9rem;
+            }
+
+            span {
+                color: var(--title-color);
+                font-size: 1.25rem;
+                font-weight: 600;
+                letter-spacing: 1.5px;
+                word-spacing: 2px;
+                transition: all 0.3s ease-in-out;
+
+                &:hover {
+                    color: var(--first-color);
+                }
+
+            }
+
+        }
+
+    }
+
+    .nav_menu {
+
+        .nav_list {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav_item a {
+            color: var(--title-color);
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            font-weight: 400;
+            transition: all 0.3s ease-in-out;
+            font-size: 0.95rem;
+
+            &:hover {
+                color: var(--first-color);
+            }
+
+        }
+
+        .secondary-btn {
+            margin-left: 0.5rem;
+        }
+
+    }
+
+    .nav_toggle {
+        display: none;
+        color: var(--first-color);
+        font-size: 1.25rem;
+        cursor: pointer;
+    }
+
+    .nav_close {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.5rem;
+        font-size: 1.5rem;
+        color: var(--title-color);
+        cursor: pointer;
+        display: none;
+
+        &:hover {
+            color: var(--first-color);
+        }
+
+    }
+
+
+}
+
+/* HEADER SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* BANNER SECTION START  */
+
+.home_section {
+    height: 100vh;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.home_container {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    align-items: initial;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.home_data {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+
+    .home_subtitle {
+        font-size: 3.4rem;
+        -webkit-text-stroke: 1.5px var(--title-color);
+        color: transparent;
+        letter-spacing: 4.1px;
+        font-weight: 900;
+    }
+
+    .home_title {
+        font-size: 4rem;
+        margin: 1rem 0;
+        letter-spacing: 2px;
+    }
+
+    .home_description {
+        font-size: 1.1rem;
+        font-family: var(--body-font);
+        color: var(--text-color);
+        font-weight: 700;
+        letter-spacing: 1px;
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+}
+
+.home_image {
+    height: 100%;
+    border: 1px solid black;
+
+    img {
+        display: block;
+        position: relative;
+        z-index: 1;
+        border: 0;
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+/* BANNER SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* BANNER SECTION START  */
+/* BANNER SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* BRANDS SECTION START  */
+/* BRANDS SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* PROGRAMS SECTION START  */
+/* PROGRAMS SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* WHY CHOOSE US SECTION START  */
+/* WHY CHOOSE US SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* PRICING SECTION START  */
+/* PRICING SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* WHY CHOOSE US SECTION START  */
+/* WHY CHOOSE US SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* CHOACHS SECTION START  */
+/* CHOACHS SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* CALCULATE BMI SECTION SECTION START  */
+/* CALCULATE BMI SECTION SECTION END  */
+
+/* ---------------- NEW SECTION STARTS ----------------------------------------------------------- */
+
+/* FOOTER SECTION START  */
+/* FOOTER SECTION END  */

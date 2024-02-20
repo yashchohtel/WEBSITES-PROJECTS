@@ -1,0 +1,293 @@
+/* ----| GOOGLE FONTS |------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+/* ----| CSS VARIABLE |------------------- */
+
+:root {
+
+    /* ------ Colors ------ */
+    --first-color: #abdf3a;
+    --first-color-light: #d9fd8b;
+    --first-color-alt: #a3d733;
+    --first-color-dark: #9dd02f;
+    --first-color-gray: #a5a99e;
+    --white-color: #ffffff;
+    --title-color: #fafafa;
+    --btn-normal-bg-color: #f1efef;
+    --title-color-black: #1e201d;
+    --text-color: #b5baba;
+    --text-color-light: #a2a9a9;
+    --body-color: #121717;
+
+    /* ------ Font and typography ------ */
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: 'Red Hat Display', sans-serif;
+    --second-font: 'Kaushan Script', cursive;
+    --biggest-font-size: 2rem;
+    --bigger-font-size: 1.5rem;
+    --big-font-size: 1.25rem;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    /* ------ Font weight ------ */
+    --font-bold: 700;
+    --font-bolder: 900;
+
+    /* ------ z index ------ */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+
+}
+
+/* Responsive typography */
+@media screen and (min-width: 992px) {
+    :root {
+        --biggest-font-size: 6rem;
+        --bigger-font-size: 3.5rem;
+        --big-font-size: 2.75rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.25rem;
+        --normal-font-size: 1rem;
+        --small-font-size: .875rem;
+        --smaller-font-size: .813rem;
+    }
+}
+
+/* ----| DEFAULT FORMATING |------------------- */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+body,
+button,
+input {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text-color);
+    user-select: none;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--title-color);
+}
+
+p{
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #121717af;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b5babaab;
+    border-radius: 5px;
+}
+
+.nav_link.active-link{
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: white;
+        transition: all 0.3s ease;
+        width: 80%;
+    }
+
+
+    &:hover {
+        color: var(--first-color);
+    }
+
+}
+
+/* ----| REUSABLE COMPONENTS |------------------- */
+
+.section {
+    padding: 5.4rem 0 4.5rem 0;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+/* BUTTONS */
+
+.button {
+    border: 3px solid transparent;
+    padding: 11px 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+
+
+    i {
+        font-size: 1.3rem;
+        transition: all 0.3s;
+    }
+    
+    &:hover i{
+        transform: translateX(5px);
+    }
+
+}
+
+.primary-button {
+    background-color: var(--first-color-dark);
+    border-color: var(--first-color);
+    color: var(--title-color-black);
+
+    &:hover {
+        background-color: transparent;
+        color: var(--white-color);
+        border-color: var(--first-color);
+    }
+}
+
+.secondary-button {
+    background-color: var(--btn-normal-bg-color);
+    color: var(--title-color-black);
+
+    &:hover {
+        background-color: var(--first-color-alt);
+        border-color: var(--first-color);
+    }
+
+}
+
+.section__data {
+    display: flex;
+    flex-direction: column;
+    row-gap: .75rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section__title,
+.section__title-border {
+    font-size: var(--big-font-size);
+    letter-spacing: 1.5px;
+}
+
+.section__subtitle {
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: var(--first-color);
+}
+
+.section__titles {
+    display: flex;
+    column-gap: .75rem;
+    justify-content: center;
+}
+
+.section__title-border {
+    -webkit-text-stroke: 1px var(--text-color);
+    color: transparent;
+}
+
+/* link active class */
+#active {
+    color: var(--first-color-alt);
+}
+
+/* scroll header css */
+.header-scrolled {
+    background-color: var(--body-color) !important;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* scroll to top */ 
+.scrollup{
+    background-color: var(--first-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    bottom: -30%;
+    right: 1rem;
+    z-index: 1;
+    font-size: 1.25rem;
+    color: var(--title-color-black);
+    transition: all 0.3s ease;
+
+    i{
+        font-size: 1.1rem;
+        transition: all 0.3s ease;
+        color: black;
+    }
+
+    &:hover{
+        background-color: var(--first-color-gray);
+
+        i{
+            transform: translateY(-3px);
+        }
+
+    } 
+
+    &.show-scroll{
+        bottom: 3rem;
+    }
+
+}
