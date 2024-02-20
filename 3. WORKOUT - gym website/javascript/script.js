@@ -76,3 +76,9 @@ const sr = ScrollReveal({
   delay:'400'
 })
 
+sr.reveal('.home_data')
+sr.reveal('.home_img', {delay: 700, origin:"bottom"})
+sr.reveal('.program_card',{interval:100})
+sr.reveal('.choose-text-content')
+sr.reveal('.choose_image', {delay: 700, origin:"bottom"})
+sr.reveal('.pricing_card',{interval:100})
