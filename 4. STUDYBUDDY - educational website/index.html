@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDYBUDDY</title>
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- BOOTSTRAP CSS LINK -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- FONTAWESOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CUSTOM CSS FILE LINK -->
+    <link rel="stylesheet" href="/scss/style.css">
+
+</head>
+
+<body>
+
+    <!-- --------------------:| HEADER SECTION START |:----------------------------- -->
+
+    <!-- header -->
+    <header class="header">
+
+        <!-- container -->
+        <div class="container-fluid">
+
+            <!-- main header -->
+            <div class="main-header d-flex justify-content-between align-items-center">
+
+                <!-- logo -->
+                <p class="logo"><span>STUDY</span> <span>BUDDY</span></p>
+
+                <!-- navigation -->
+                <nav class="navigation">
+
+                    <!-- nav links -->
+                    <ul class="nav-links d-flex">
+
+                        <!-- link -->
+                        <li class="link active">
+                            <a class="seprate-link" href="index.html">home</a>
+                        </li>
+
+                        <li class="link" id="mobile-submenu-open-1">
+                            <p class="seprate-link">courses <span class="smDropD-1"><i
+                                        class="fa-solid fa-caret-down"></i></span> </p>
+
+                            <!-- submenu -->
+                            <ul class="submenu">
+                                <li><a href="courses.html">courses</a></li>
+                                <li><a href="coursedetail.html">course detail</a></li>
+                            </ul>
+
+                        </li>
+                        <!-- submenu for mobile -->
+                        <ul class="mobile-submenu" id="mobile-submenu-1">
+                            <li><a href="courses.html">courses</a></li>
+                            <li><a href="coursedetail.html">course detail</a></li>
+                        </ul>
+
+
+                        <li class="link" id="mobile-submenu-open-2">
+                            <p class="seprate-link">profile <span class="smDropD-2"><i
+                                        class="fa-solid fa-caret-down"></i></span> </p>
+
+                            <!-- submenu -->
+                            <ul class="submenu">
+                                <li><a href="login.html">login</a></li>
+                                <li><a href="signup.html">sign up</a></li>
+                            </ul>
+
+
+                        </li>
+                        <!-- submenu for mobile -->
+                        <ul class="mobile-submenu" id="mobile-submenu-2">
+                            <li><a href="login.html">login</a></li>
+                            <li><a href="signup.html">sign up</a></li>
+                        </ul>
+
+                        <li class="link">
+                            <a class="seprate-link" href="contact.html">contact</a>
+                        </li>
+
+                    </ul>
+
+                    <!-- navigation close icon -->
+                    <span class="menu-close"><i class="fa-solid fa-xmark"></i></span>
+
+                </nav>
+
+                <!-- navigation open icon -->
+                <span class="menu-open"><i class="fa-solid fa-bars"></i></span>
+
+                <!-- navigation overlay -->
+                <div class="blur-overlay"></div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- --------------------:| HOME HERO SECTION START |:-------------------------- -->
+
+    <!-- home hero -->
+    <section class="home-hero d-flex align-items-center">
+
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- mini circles -->
+            <div class="mini-circle"></div>
+            <div class="mini-circle"></div>
+            <div class="mini-circle"></div>
+            <div class="mini-circle"></div>
+
+            <div class="row d-flex align-items-center">
+
+                <!-- left text content -->
+                <div class="col-lg-6 order-lg-1 order-2 mb-5 p-3 p-sm-0">
+
+                    <div class="banner-text">
+                        <h2 class="mb-3"> An investment in knowledge pays the best intrests.</h2>
+                        <h1 class="mb-3"> best online platform for learning.</h1>
+                        <p class="mb-3"> Get best of our courses for current and futures demanding skills of Data
+                            Science, Machine
+                            Learning at very affordable price point !
+                        </p>
+                        <a href="#" class="btn btn-primary">join for free</a>
+                    </div>
+
+                </div>
+
+                <!-- right image section -->
+                <div class="col-lg-6 order-lg-2 order-1 mb-3 mb-sm-5 mt-3 mt-sm-5 mt-lg-0">
+
+                    <div class="banner-image">
+                        <div class="circular-image-wrapper">
+                            <div class="circular-img-container">
+                                <div class="circular-img-circle"></div>
+                                <img src="/images/hero-banner.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- --------------------:| NUMBERS SECTION STARTS |:--------------------------- -->
+
+    <!-- numbers section -->
+    <section class="numbers">
+
+        <div class="container">
+
+            <div class="box py-3">
+
+                <div class="row text-center">
+
+                    <div class="col-md-6 mb-4 mb-lg-0 col-lg-3">
+                        <div class="numbers-item">
+                            <h2 class="style-1">400K</h2>
+                            <p>STUDENTS</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4 mb-lg-0 col-lg-3">
+                        <div class="numbers-item">
+                            <h2 class="style-2">500+</h2>
+                            <p>COURSES</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-4 mb-lg-0 col-lg-3">
+                        <div class="numbers-item">
+                            <h2 class="style-1">15+</h2>
+                            <p>LANGUAGES</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mb-lg-0 col-lg-3">
+                        <div class="numbers-item">
+                            <h2 class="style-2">100+</h2>
+                            <p>TUTIORS</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- --------------------:| HOME COURSES SECTION STARTS |:---------------------- -->
+
+    <!-- home courses section -->
+    <section class="home-courses-section">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- section heading -->
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="section-title  text-center">
+                        <h2 class="title">courses</h2>
+                        <p class="sub-title">Find the right course for you</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- courses -->
+            <div class="row">
+
+                <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+
+                    <!-- course item -->
+                    <div class="course">
+
+                        <a href="/coursedetail.html">
+
+                            <div class="course-item">
+
+                                <div class="image">
+                                    <div class="img-overlay"></div>
+                                    <span class="ol-title">html</span>
+                                    <img src="/images/courses/web-development/1.jpg" alt="">
+                                </div>
+
+                                <div class="text-content">
+                                    <p class="title">Html For Beginers</p>
+                                    <div class="tutior">
+                                        <img src="/images/courses/1.png" alt="">
+                                        <span>Harry codes</span>
+                                    </div>
+                                    <div class="rating">
+                                        <span class="average-rating">(4.5)</span>
+                                        <span class="average-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </span>
+                                        <span class="reviews">(230)</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+                    <!-- course item -->
+                    <div class="course">
+
+                        <a href="/coursedetail.html">
+
+                            <div class="course-item">
+
+                                <div class="image">
+                                    <div class="img-overlay"></div>
+                                    <span class="ol-title">css</span>
+                                    <img src="/images/courses/web-development/2.jpg" alt="">
+                                </div>
+
+                                <div class="text-content">
+                                    <p class="title">css For Beginers</p>
+                                    <div class="tutior">
+                                        <img src="/images/courses/1.png" alt="">
+                                        <span>code spiner</span>
+                                    </div>
+                                    <div class="rating">
+                                        <span class="average-rating">(4.0)</span>
+                                        <span class="average-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </span>
+                                        <span class="reviews">(125)</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+                    <!-- course item -->
+                    <div class="course">
+
+                        <a href="/coursedetail.html">
+
+                            <div class="course-item">
+
+                                <div class="image">
+                                    <div class="img-overlay"></div>
+                                    <span class="ol-title">javascript</span>
+                                    <img src="/images/courses/web-development/3.jpg" alt="">
+                                </div>
+
+                                <div class="text-content">
+                                    <p class="title">js For Beginers</p>
+                                    <div class="tutior">
+                                        <img src="/images/courses/1.png" alt="">
+                                        <span>coders gyan</span>
+                                    </div>
+                                    <div class="rating">
+                                        <span class="average-rating">(4.5)</span>
+                                        <span class="average-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star-half-stroke"></i>
+                                        </span>
+                                        <span class="reviews">(200)</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4 mb-lg-0">
+
+                    <!-- course item -->
+                    <div class="course">
+
+                        <a href="/coursedetail.html">
+
+                            <div class="course-item">
+
+                                <div class="image">
+                                    <div class="img-overlay"></div>
+                                    <span class="ol-title">python</span>
+                                    <img src="/images/courses/web-development/4.jpg" alt="">
+                                </div>
+
+                                <div class="text-content">
+                                    <p class="title">python For Beginers</p>
+                                    <div class="tutior">
+                                        <img src="/images/courses/1.png" alt="">
+                                        <span>michel jhon</span>
+                                    </div>
+                                    <div class="rating">
+                                        <span class="average-rating">(5.0)</span>
+                                        <span class="average-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </span>
+                                        <span class="reviews">(400)</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- all courses page link -->
+            <div class="col-12 text-center mt-3 mt-lg-5">
+                <a href="courses.html" class="btn btn-primary">view all courses</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- --------------------:| PRICING SECTION STARTS |:--------------------------- -->
+
+    <!-- pricing -->
+    <section class="pricing">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- section heading -->
+            <div class="row justify-content-center mb-md-3">
+                <div class="col-md-8">
+                    <div class="section-title  text-center">
+                        <h2 class="title">PRICING</h2>
+                        <p class="sub-title">learn skills at affordable price</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- pricing card item -->
+            <div class="row justify-content-evenly">
+
+                <div class="col-md-5 col-lg-3 mb-5 order-2">
+
+                    <div class="card-item text-center">
+
+                        <div class="card-item-header">
+                            <h3 class="type">single</h3>
+                            <p class="price">$ 45 / month <span></span></p>
+                            <button class="btn btn-primary">GET STARTED</button>
+                        </div>
+
+                        <div class="card-item-info">
+                            <ul>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> single subscription
+                                </li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> limited offers</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> 10 course only</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> 1 year validity</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> 4 devices only</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> only mobile</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-5 col-lg-3 mb-5 order-1 order-lg-2">
+
+                    <div class="card-item text-center active">
+
+                        <!-- crown -->
+                        <span class="crown"><i class="fa-solid fa-crown"></i></span>
+
+                        <div class="card-item-header">
+                            <h3 class="type">ENTERPRICE</h3>
+                            <p class="price">$ 100 / month <span></span></p>
+                            <button class="btn btn-primary">GET STARTED</button>
+                        </div>
+
+
+                        <div class="card-item-info">
+                            <ul>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> 1000 subscription
+                                </li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> every offers
+                                    available</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> all available course
+                                </li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> lifetime validity
+                                </li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> unlimited devices
+                                </li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> any device</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-5 col-lg-3 mb-5 order-3">
+
+                    <div class="card-item text-center">
+
+                        <div class="card-item-header">
+                            <h3 class="type">group</h3>
+                            <p class="price">$ 75 / month <span></span></p>
+                            <button class="btn btn-primary">GET STARTED</button>
+                        </div>
+
+
+                        <div class="card-item-info">
+                            <ul>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> 20 subscription</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> limited offers</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> 50 course only</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> 2 year validity</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> 10 devices only</li>
+                                <li class="card-info-item"><i class="fa-solid fa-circle-check"></i> only mobile</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- --------------------:| TESTIMONIAL SECTION STARTS |:----------------------- -->
+
+    <!-- testimonial -->
+    <section class="testimonial my-5">
+
+        <!-- section decore -->
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <span class="circle"></span>
+        <img class="circle" src="/images/testimonial/1.png" alt="">
+        <img class="circle" src="/images/testimonial/2.png" alt="">
+        <img class="circle" src="/images/testimonial/3.png" alt="">
+
+        <!-- container -->
+        <div class="container">
+
+            <!-- section heading -->
+            <div class="row justify-content-center mb-md-3">
+                <div class="col-md-8">
+                    <div class="section-title  text-center">
+                        <h2 class="title">TESTIMONIAL</h2>
+                        <p class="sub-title">what our students says</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- testimonial items -->
+            <div class="row justify-content-center text-center">
+                <div class="col-md-8 col-lg-6">
+
+
+
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-item">
+                                    <div class="image-box">
+                                        <img src="/images/testimonial/2.png" alt="">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h3 class="name">YASH CHOHTEL</h3>
+                                        <p class="text-2">FRONTEND DEVELOPER</p>
+                                        <p class="text-1">This academy has amazing courses that can help you to land at
+                                            your dream jobs and get high paying jobs you can trust them blindly and can
+                                            learn any thin from tws study
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-item">
+                                    <div class="image-box">
+                                        <img src="/images/testimonial/1.png" alt="">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h3 class="name">JOHN MIKEL</h3>
+                                        <p class="text-2">BACKEND DEVELOPER</p>
+                                        <p class="text-1">This academy has amazing courses that can help you to land at
+                                            your dream jobs and get high paying jobs you can trust them blindly and can
+                                            learn any thin from tws study
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-item">
+                                    <div class="image-box">
+                                        <img src="/images/testimonial/3.png" alt="">
+                                    </div>
+                                    <div class="testimonial-text">
+                                        <h3 class="name">GARVIT NIRWAN</h3>
+                                        <p class="text-2">IOS DEVELOPER</p>
+                                        <p class="text-1">This academy has amazing courses that can help you to land at
+                                            your dream jobs and get high paying jobs you can trust them blindly and can
+                                            learn any thin from tws study
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- --------------------:| TUTOR SECTION STARTS |:----------------------------- -->
+
+    <!-- tutor -->
+    <section class="tutior-section">
+
+        <!-- container -->
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+
+                    <div class="box p-3">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mb-5">
+                                <div class="circular-image-wrapper">
+                                    <div class="circular-img-container">
+                                        <div class="circular-img-circle"></div>
+                                        <img src="/images/tutor-banner.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6">
+                                <div class="section-title">
+                                    <h2 class="title">start your teaching</h2>
+                                    <p class="sub-title mb-3">became an instructor</p>
+                                    <a href="#" class="btn btn-primary">apply now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- --------------------:| FOOTER SECTION STARTS |:----------------------------- -->
+
+    <!-- footer -->
+    <footer class="footer mt-5 py-4">
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-item">
+                        <h3>quick links</h3>
+                        <ul>
+                            <li><a href="">home</a></li>
+                            <li><a href="">login</a></li>
+                            <li><a href="">course</a></li>
+                            <li><a href="">signup</a></li>
+                            <li><a href="">contact</a></li>
+                            <li><a href="">course details</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-item">
+                        <h3>learning</h3>
+                        <ul>
+                            <li><a href="#">faq's</a></li>
+                            <li><a href="#">policy</a></li>
+                            <li><a href="#">tutior</a></li>
+                            <li><a href="#">pricings</a></li>
+                            <li><a href="#">get the app</a></li>
+                            <li><a href="#">testimonial</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                    <div class="footer-item">
+                        <h3>more</h3>
+                        <ul>
+                            <li><a href="#">contact</a></li>
+                            <li><a href="#">support</a></li>
+                            <li><a href="#">affiliate</a></li>
+                            <li><a href="#">free test</a></li>
+                            <li><a href="#">become creater</a></li>
+                            <li><a href="#">traning webiners</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="footer-item">
+                        <h3>get in touch</h3>
+                        <ul class="social-icon">
+                            <li><a href="#"><i class="fa-brands fa-square-twitter"></i> twitter</a></li>
+                            <li><a href="#"><i class="fa-brands fa-linkedin"></i> linkdin</a></li>
+                            <li><a href="#"><i class="fa-brands fa-youtube"></i> youtube</a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-facebook"></i> facebook</a></li>
+                            <li><a href="#"><i class="fa-brands fa-square-instagram"></i> instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- --------------------:| JAVASCRIPT FILE LINKS SECTION |:-------------------- -->
+
+    <!-- BOOTSTRAP JAVASCFIPT CDN LINK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <!-- CUSTOM JAVASCRIPT FILE LINK -->
+    <script src="/javascript/script.js"></script>
+
+
+</body>
+
+</html>

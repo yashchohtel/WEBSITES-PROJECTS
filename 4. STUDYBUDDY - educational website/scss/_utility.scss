@@ -1,0 +1,198 @@
+/* --------------------:| GOOGLE FONTS |:-------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* --------------------:| ROOT VARIABLES |:------------------ */
+
+:root {
+
+    // typography
+    --font-primary: 'Poppins', sans-serif;
+
+    // background colors
+    --bg-black-1: #2d2d35;
+    --bg-black-2: #212121;
+    --bg-blue-1: #7e8cf0;
+    --bg-white-1: #ffffff;
+    --bg-white-2: #fcf3f3;
+    --bg-gray-1: #5e5e5e;
+
+
+    // text-colors
+    --text-blue-1: #7e8cf0;
+    --text-white-1: #ffffff;
+    --text-gray-1: #b6b6b6;
+    --text-gray-2: #625b5b;
+    --text-black-1: #212121;
+    --text-orange-1: #e69419;
+
+    // transition
+    --transition-02S: all 0.2s ease;
+    --transition-03S: all 0.3s ease;
+
+    // box shadow
+    --shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --shadow-2: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+
+/* --------------------:| REFORMATING |:------------------ */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--bg-black-1);
+}
+
+// scroll bar
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-black-2);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 5px;
+    border: 2px solid var(--bg-black-2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-blue-1);
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+.container-fluid {
+    max-width: 1400px;
+}
+
+/* --------------------:| REUSABLE CLASSES |:------------------ */
+
+// global button design
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.btn-primary {
+    background: var(--bg-blue-1);
+    color: var(--bg-white-1);
+}
+
+// curcular image popup
+.circular-image-wrapper {
+    max-width: 360px;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+
+    .circular-img-container {
+        text-align: center;
+        border-radius: 0 0 180px 180px;
+        overflow: hidden;
+
+        .circular-img-circle {
+            width: 360px;
+            height: 360px;
+            border-radius: 50%;
+            background: linear-gradient(to bottom right, #2C82F9, #96F2FF);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        img {
+            width: auto;
+            height: 450px;
+            position: relative;
+            z-index: 1;
+        }
+
+    }
+
+}
+
+// section heading and subheading
+.section-title {
+
+    margin-bottom: 40px;
+
+    .title {
+        color: var(--text-white-1);
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    .sub-title {
+        color: var(--text-blue-1);
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+}
+
+
+
+.box{
+    box-shadow: var(--shadow-2);
+    border-radius: 5px;
+    background-color: var(--bg-blue-1);
+    padding: 20px;
+}
+
+/* --------------------:| ANIMATION |:------------------ */
+
+// spin
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

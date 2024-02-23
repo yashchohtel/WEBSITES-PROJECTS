@@ -1,0 +1,328 @@
+// MEDIA FOR 1200PX
+@media (max-width:1200px) {
+
+    // hero banner
+    .home-hero .banner-text {
+
+        h2 {
+            font-size: 1rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+    }
+
+
+}
+
+// MEDIA FOR 992PX
+@media (max-width:992px) {
+
+    // home page 
+    .home-hero {
+        margin: 80px 0;
+        height: auto;
+        max-height: 820px;
+
+        .mini-circle:nth-child(1) {
+            top: 4%;
+            left: 2%;
+        }
+
+        .mini-circle:nth-child(2) {
+            top: 88%;
+            left: 59%;
+        }
+
+        .mini-circle:nth-child(3) {
+            top: 40%;
+            left: 95%;
+        }
+
+        .mini-circle:nth-child(4) {
+            top: 50%;
+            left: 13%;
+        }
+
+    }
+
+    // home tutior section
+    .section-title {
+        text-align: center;
+    }
+
+
+}
+
+// MEDIA FOR 767PX
+@media (max-width:767px) {
+
+    // HEADER
+    .header .main-header {
+        padding: 17px 15px;
+    }
+
+    .header .main-header .menu-open {
+        display: flex;
+    }
+
+    .header .main-header .navigation .nav-links .link .submenu {
+        display: none;
+    }
+
+    .header .main-header .navigation .nav-links .mobile-submenu {
+        display: block;
+    }
+
+    .header .main-header .navigation .menu-close {
+        display: flex;
+    }
+
+    .header .main-header .navigation {
+        position: fixed;
+        top: 0;
+        right: -110%;
+        background: var(--bg-black-2);
+        height: 100vh;
+        width: 70vw;
+        box-shadow: var(--shadow-1);
+        border-left: 2px solid var(--bg-white-1);
+        padding: 60px 0 0 0;
+        z-index: 3;
+
+        &.active {
+            right: 0;
+        }
+
+        .nav-links {
+            flex-direction: column;
+            gap: 0;
+
+            .link {
+                position: relative;
+                border: 1px solid var(--bg-black-1);
+                border-left: none;
+                border-right: none;
+                transition: var(--transition-02S);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--bg-black-1);
+                }
+
+                .seprate-link {
+                    padding: 13px 20px;
+
+                    &>span {
+                        margin-left: 2px;
+                        position: absolute;
+                        right: 20px;
+                        top: 50%;
+                        transform: translateY(-50%);
+
+                        &.active {
+                            transform: translateY(-50%) rotate(180deg);
+                        }
+
+                    }
+
+
+
+                }
+
+            }
+
+        }
+
+    }
+
+    // HOME PRICE
+    .pricing .card-item .crown {
+        top: 10px;
+        left: 13px;
+        font-size: 2rem;
+        transform: rotate(0);
+    }
+
+}
+
+// MEDIA FOR 575PX
+@media (max-width:575px) {
+
+    html {
+        font-size: 13px;
+    }
+
+    // HEADER
+    .header .main-header .logo {
+        font-size: 1.6rem;
+    }
+
+    .header .main-header .menu-open {
+        width: 35px;
+        height: 25px;
+        font-size: 1.2rem;
+    }
+
+    // hero section
+
+    .home-hero .mini-circle {
+        width: 20px;
+        height: 20px;
+    }
+
+    .home-hero .banner-image .circular-image-wrapper {
+        max-width: 300px;
+    }
+
+    .home-hero .banner-image .circular-image-wrapper .circular-img-container .circular-img-circle {
+        width: 300px;
+        height: 300px;
+    }
+
+    .home-hero .banner-image .circular-image-wrapper .circular-img-container img {
+        height: 350px;
+    }
+
+    .home-hero .banner-text h2 {
+        font-size: 1.1rem;
+    }
+
+    .home-hero .banner-text h1 {
+        font-size: 1.7rem;
+    }
+
+    .home-hero .banner-text p {
+        font-size: 0.9rem;
+    }
+
+    home couerses section .section-title .title {
+        font-size: 2rem;
+    }
+
+    .section-title .sub-title {
+        font-size: 1.2rem;
+
+    }
+
+    // home testimonial
+    .testimonial {
+        padding: 40px 0px;
+
+        .circle:nth-child(1) {
+            width: 20px;
+            height: 20px;
+        }
+
+        .circle:nth-child(2) {
+            width: 35px;
+            height: 35px;
+            top: 34%;
+            left: 60%;
+        }
+
+        .circle:nth-child(3) {
+            width: 25px;
+            height: 25px;
+            top: 90%;
+            left: 82%;
+        }
+
+        .circle:nth-child(5) {
+            width: 40px;
+            height: 40px;
+        }
+
+        .circle:nth-child(6) {
+            width: 30px;
+            height: 30px;
+        }
+
+        .circle:nth-child(7) {
+            width: 35px;
+            height: 35px;
+            top: 27%;
+            left: 16%;
+        }
+
+    }
+
+    // home tutior
+    .circular-image-wrapper {
+        max-width: 300px;
+
+        .circular-img-container {
+
+            .circular-img-circle {
+                width: 300px;
+                height: 300px;
+            }
+
+            img {
+                width: auto;
+                height: 365px;
+                position: relative;
+                z-index: 1;
+            }
+
+        }
+
+        
+    }
+
+    .tutior-section .box .section-title .title {
+        font-size: 1.4rem;
+    }
+
+    // CONTACT PAGE
+    .contact {
+        padding-top: 20px;
+    }
+
+    // COURSES PAGE
+    .courses-section {
+        padding: 20px 0;
+    }
+
+    .section-title .title {
+        font-size: 2.2rem;
+    }
+
+    // CURSE DETAIL PAGE
+    .course-detail {
+        padding: 10px 0;
+    }
+
+    .course-detail .course-header h2 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .course-detail .tab-content .course-curriculum .accordion-item .accordion-button {
+        font-size: 0.8rem;
+    }
+
+    .course-detail .tab-content .course-curriculum .accordion-item .accordion-button span {
+        font-size: 0.8rem;
+    }
+
+    .course-detail .tab-content .course-curriculum .accordion-item .accordion-body ul li {
+        font-size: 0.8rem;
+    }
+
+    .course-detail .course-header ul li span a {
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+
+    .course-detail .tab-content .course-instructor .instructor-details .detsils-wrap .right-box h4 span {
+        font-size: 0.9rem;
+    }
+
+}
