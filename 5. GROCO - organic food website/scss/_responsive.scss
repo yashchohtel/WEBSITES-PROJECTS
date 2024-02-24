@@ -1,0 +1,72 @@
+@media (max-width:1000px) {
+
+    // general css 
+    html {
+        font-size: 54%;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+    // header
+    .header {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:786px) {
+
+    // general css 
+    html {
+        font-size: 53%;
+    }
+    
+    // header
+    .header .search-form {
+        width: 90%;
+    }
+
+    .header #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navigation{
+        position: absolute;
+        top: 110%;
+        right: -110%;
+        width: 30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: 0.5rem;
+        background: #fff;
+
+        &.active{
+            right: 2rem;
+            transition: 0.2s linear;
+        }
+
+        a{
+            font-size: 2rem;
+            margin: 2rem 2.5rem;
+            display: block;
+        }
+
+    }
+
+}
+
+@media (max-width:450px) {
+
+    // general css 
+    html {
+        font-size: 50%;
+    }
+
+
+    // home
+    .home .content h3 span {
+        display: block;
+    }
+
+}
