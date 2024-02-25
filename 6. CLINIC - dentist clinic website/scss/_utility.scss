@@ -1,0 +1,198 @@
+/* ----- GOOGLE FONTS ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ----- VARIABLES ----- */
+
+:root {
+    /* background colors */
+    --primary-color: #004caa;
+    --secondary-color: #fc5185;
+    --bg-light-blue: #3672bc;
+    --bg-dark: #666666;
+    --bg-white: #ffffff;
+    --very-light-blue: #0000ff5e;
+
+    /* text color */
+    --primary-text: #004caa;
+    --secondary-text: #fc5185;
+    --text-white: #ffffff;
+    --text-black: #222;
+    --text-gray: #666;
+    --text-light: #ddd;
+
+    /* font family */
+    --primary-font: 'Josefin Sans', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+    /* transition */
+    --transition-01: all 0.1s ease-in;
+    --transition-02: all 0.2s ease-in;
+    --transition-03: all 0.3s ease-in;
+}
+
+/* ----- REFORMATING ----- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--bg-white);
+    user-select: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-light-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* ----- REUSABLE CLASSES ----- */
+
+.wrapper {
+    padding: 6rem 0;
+}
+
+h1 {
+    font-size: 3.8rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    color: var(--text-white);
+    font-family: var(--primary-font);
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--text-white);
+    font-family: var(--primary-font);
+}
+
+h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-white);
+    font-family: var(--primary-font);
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 2.25rem;
+    color: var(--text-black);
+    font-family: var(--secondary-font);
+}
+
+h5 {
+    font-size: 1.5rem;
+    color: var(--primary-text);
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 0.9rem;
+    font-family: var(--secondary-font);
+}
+
+h6 {
+    font-size: 0.850rem;
+    color: var(--text-black);
+    font-weight: 300;
+    margin-bottom: 0.9375rem;
+    font-family: var(--secondary-font);
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--text-gray);
+}
+
+.card{
+    border-radius: .625rem;
+    background-color: var(--bg-white);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 3.75rem 2.5rem 4.6875rem;
+    transition: all .4s;
+    border: 0;
+}
+
+.btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    text-align: center;
+    padding: 0.75rem 1.4rem;
+    font-size: 1rem;
+    background: transparent;
+    text-transform: uppercase;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    font-family: var(--secondary-font);
+}
+
+.main-btn{
+    border-color: var(--bg-white);
+    color: var(--text-white);
+
+    &:hover{
+        background-color: var(--secondary-color);
+        border-color: var(--secondary-color);
+        color: var(--text-white);
+    }
+
+}
+
+.secondary-btn{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: var(--text-white);
+
+    &:hover{
+        background-color: var(--bg-white);
+        border-color: var(--bg-white);
+        color: var(--text-black);
+    }
+
+}
+
+/* ----- ANIMATIONS ----- */
+
+@keyframes movebounce{
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(1.25rem);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}

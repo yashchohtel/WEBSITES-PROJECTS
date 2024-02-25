@@ -1,0 +1,436 @@
+/* -------------------| HEADER SECTION STARTS |--------------------------- */
+
+.header {
+    padding: 1rem;
+
+    &.header-scrolled {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: var(--bg-white);
+        box-shadow: .5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%);
+        transition: var(--transition-01);
+    }
+
+    // nav-links
+    .nav-links {
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+        z-index: 2;
+
+        .link {
+
+            a {
+                font-size: 1.2rem;
+                font-weight: 500;
+                color: var(--primary-text);
+                transition: var(--transition-02);
+            }
+
+            &:hover a {
+                color: var(--secondary-text);
+            }
+
+        }
+
+    }
+
+    // navigation open button
+    .nav-open-btn {
+        display: none;
+    }
+
+    // navigation close button
+    .nav-close-btn {
+        display: none;
+    }
+
+    // overlay
+    .blur-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: linear-gradient(135deg, rgba(225, 255, 255, 0.1), rgba(225, 255, 255, 0));
+        backdrop-filter: blur(5px);
+        display: none;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1;
+        transition: var(--transition-3S);
+
+        &.active {
+            display: block;
+            opacity: 1;
+            visibility: visible;
+        }
+
+    }
+
+}
+
+/* -------------------| HEADER SECTION ENDS |----------------------------- */
+
+/* |=====================================================================| */
+
+/* -------------------| HOME SECTION STARTS |----------------------------- */
+
+.home {
+    border-bottom: 3px solid var(--very-light-blue);
+    padding-bottom: 4rem;
+
+    // home section
+    .home-wrapper {
+        background: url(/images/top-banner-img/Top-banner.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+
+        // left text
+        p {
+            color: var(--text-white);
+            letter-spacing: 0.3px;
+        }
+
+        // right image
+        .top-right-sec {
+            position: relative;
+            background: url(/images/top-banner-img/top-right-bg.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .animate-img {
+            position: absolute;
+            bottom: 0;
+
+            .img_1 {
+                position: relative;
+                left: -2rem;
+                animation-name: movebounce;
+                animation-delay: 100ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 2s;
+                animation-direction: alternate;
+            }
+
+            .img_2 {
+                animation-name: movebounce;
+                animation-delay: 200ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: ease-in-out;
+                animation-duration: 2.5s;
+                animation-direction: alternate;
+            }
+
+        }
+
+    }
+
+    // features section
+    .card {
+        border: 2px solid transparent;
+
+        .icon_box {
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 2.5rem;
+        }
+
+        &:hover {
+            transform: translateY(-0.6rem);
+            background-color: var(--secondary-text);
+            border-color: var(--very-light-blue);
+        }
+
+        &:hover h4 {
+            color: var(--text-white);
+        }
+
+        &:hover p {
+            color: var(--text-white);
+        }
+
+    }
+
+
+}
+
+/* -------------------| HOME SECTION ENDS |------------------------------- */
+
+
+/* |=====================================================================| */
+
+/* -------------------| ABOUT SECTION STARTS |----------------------------- */
+
+.about_wrapper {
+
+    .about-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        .about_main_img {
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .about_animate {
+            position: absolute;
+            left: 1rem;
+            bottom: -1rem;
+            animation: movebounce 3s linear infinite;
+            height: 70%;
+        }
+
+    }
+
+    h2 {
+        color: var(--text-black);
+    }
+
+    .num-card {
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        background-color: var(--bg-white);
+        box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+
+        .line {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 2px;
+            height: 100%;
+            background-color: var(--bg-dark);
+
+            &.line-2 {
+                height: 2px;
+                width: 100%;
+            }
+
+        }
+
+        .num-box {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            padding: 3rem 1rem;
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+
+        }
+
+    }
+
+}
+
+/* -------------------| ABOUT SECTION ENDS |------------------------------- */
+
+/* |======================================================================| */
+
+/* -------------------| OUR SERVICES SECTION STARTS |---------------------- */
+
+.services_wrapper {
+    background-color: var(--primary-color);
+
+    .card {
+
+        background-color: transparent;
+        border: .0625rem solid var(--bg-light-blue);
+        box-shadow: none;
+        padding: 2rem;
+
+        &:hover {
+            background: var(--bg-light-blue);
+            cursor: pointer;
+        }
+
+        h4,
+        p {
+            color: var(--text-white);
+        }
+
+        .icon-box {
+            margin-bottom: 1.875rem;
+        }
+
+    }
+
+}
+
+/* -------------------| OUR SERVICES SECTION ENDS |------------------------ */
+
+
+/* |======================================================================| */
+
+/* -------------------| OUR TEAM SECTION STARTS |-------------------------- */
+
+.team_wrapper {
+    .card {
+        padding: 1.2rem;
+
+        &:hover {
+            transform: translateY(-0.5rem);
+        }
+
+        .team-img {
+            margin: 0 auto;
+        }
+
+        .team-info {
+            .social-network {
+                transition: all 0.3s ease-in-out;
+                padding: .25rem 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+
+                li a {
+                    width: 1.6rem;
+                    height: 1.6rem;
+                    line-height: 1.6rem;
+                    display: block;
+                    border-radius: .3125rem;
+                    margin: 0 .3125rem;
+                    font-size: .75rem;
+                    background-color: var(--bg-dark);
+                    color: var(--text-white);
+                    transition: all 0.3s ease;
+                    padding: 2px;
+
+                    &:hover {
+                        background-color: var(--secondary-text);
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+
+
+/* -------------------| OUR TEAM SECTION ENDS |---------------------------- */
+
+/* |======================================================================| */
+
+/* -------------------| GALLERY SECTION STARTS |--------------------------- */
+
+.gallery_wrapper{
+    background-image: url(/images/gallery/gallery-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+    img{
+        border-radius: 1rem;
+    }
+    
+}
+
+/* -------------------| GALLERY SECTION ENDS |----------------------------- */
+
+/* |======================================================================| */
+
+/* -------------------| TESTIMONIAL SECTION STARTS |----------------------- */
+
+.testinomial_wrapper{
+
+    .card{   
+        background: rgba(252, 82, 133, 0.05);
+        padding: 0.9rem;
+    }
+}
+
+/* -------------------| TESTIMONIAL SECTION ENDS |------------------------- */
+
+
+/* |======================================================================| */
+
+/* -------------------| APPOINTMENT SECTION STARTS |----------------------- */
+
+.appointment_wrapper{
+    background-image: url(/images/appointmnet-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* -------------------| APPOINTMENT SECTION ENDS |------------------------- */
+
+/* |======================================================================| */
+
+/* -------------------| BLOG SECTION STARTS |------------------------------ */
+
+.blog_wrapper{
+    .blog-content{
+        background-color: var(--bg-light-blue);
+        padding: 2rem;
+    }
+}
+
+/* -------------------| BLOG SECTION ENDS |-------------------------------- */
+
+/* |======================================================================| */
+
+/* -------------------| FOOTER SECTION STARTS |------------------------------ */
+
+.footer_wrapper{
+    background-color: var(--primary-text);
+    padding-bottom: 0rem;
+
+    &.wrapper{
+        padding-bottom: 0;
+    }
+
+    h5{
+        color: var(--text-white);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    p{
+        color: var(--text-white);
+    }
+
+    ul li{
+        margin-bottom: .5rem;
+    }
+
+    ul li a{
+        color: var(--bg-white);
+    }
+
+    .copy{
+        background-color: var(--secondary-color);
+    }
+
+}
+
+/* -------------------| FOOTER SECTION STARTS |------------------------------ */
