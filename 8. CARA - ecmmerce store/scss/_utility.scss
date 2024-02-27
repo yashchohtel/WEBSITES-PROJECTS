@@ -1,0 +1,132 @@
+/* ------- GOOGLE FONTS ------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* ------- ROOT VARIABLE ------------------------------ */
+
+:root {
+
+    /* ----- FONT FAMILY ---- */
+    --primary-font: 'League Spartan', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+    /* ---- BACKGROUND COLORS ---- */
+    --bg-1: #E3E6F3;
+    --bg-2: #088178;
+    --bg-4: #fddde4;
+
+    /* ---- FONTS COLORS ---- */
+    --font-color-1: #222;
+    --font-color-2: #1a1a1a;
+    --font-color-3: #088178;
+
+
+}
+
+/* ------- REFORMATING -------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--primary-font);
+    list-style: none;
+    text-decoration: none;
+    // border: 1px solid black;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    width: 100%;
+}
+
+
+h1 {
+    font-size: 5rem;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 4.6rem;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 2rem;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+p {
+    font-size: 1.6rem;
+    color: #465b52;
+    margin: 1.5rem 0 2rem 0;
+}
+
+/* ------- REUSABLE -------------------------------- */
+
+.section-p1 {
+    padding: 4rem 8rem;
+}
+
+.section-m1 {
+    margin: 4rem 0;
+}
+
+button.normal{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.5rem 3rem ;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0.2s ease;
+
+    a{
+        color: #000;
+    }
+
+    &:hover{
+        background: #ef3636;
+    }
+
+    &:hover a{
+        color: #fff;
+    }
+
+}
+
+button.white{
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 1.5rem 3rem ;
+    cursor: pointer;
+    border: 1px solid #fff;
+    outline: none;
+    transition: all 0.2s ease;
+    background: transparent;
+
+    a{
+        color: #FFF;
+        font-weight: 500;
+    }
+
+    &:hover{
+        background: #008818;
+    }
+
+    &:hover a{
+        color: #fff;
+    }
+
+}
