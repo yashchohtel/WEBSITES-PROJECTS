@@ -191,4 +191,5 @@ var swiper = new Swiper(".blogs-slider", {
       slidesPerView: 3,
     },
   },
+  
 });
