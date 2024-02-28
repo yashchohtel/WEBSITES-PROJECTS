@@ -1,0 +1,205 @@
+/* GOOGLE FONT IMPORT LINK */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* FONTS  */
+html {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    -webkit-font-smoothing:antialiased;
+}
+
+/* FOR FLEX PROPERTY  */
+
+.flex{
+    display: flex;
+}
+
+.flex_1{
+    flex: 1;
+}
+
+.justify_between{
+    justify-content: space-between;
+}
+
+.justify_center{
+    justify-content: center;
+}
+
+.justify_evenly{
+    justify-content: space-evenly;
+}
+
+.items_center{
+    align-items: center;
+}
+
+.direction_col{
+    flex-direction: column;
+}
+
+/* FOR SECTIONS  */
+section{
+    padding: 4rem 0;
+}
+
+/* COLORS VARIABLES */
+:root {
+    --primary:#EEBF00;
+    --primary2:#f1c40f;
+    --secondary:#161c24;
+    --secondary2:#000000;
+    --ternary:#6C6C6C;
+    --danger:#FE4545;
+    --pure:#FEFEFE;
+    --white:#fff;
+    --light:#F0F0F0;
+    --heaven:#FFFFFF;
+    --footer:#2D333F;
+    --hover:#7f8c8d;
+    --bluetint:#372982;
+    --bluetint2:#516bff;
+
+}
+
+/* RESET */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+/* FOR ANCHOR TAG  */
+a{
+    text-decoration: none;
+}
+
+/* FOR LIST ITEM  */
+li{
+    list-style: none;
+}
+
+/* CONTAINER  */
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* BOX SHADOW  */
+.magic_shadow{
+    position: relative;
+    background: var(--heaven);
+}
+
+.magic_shadow::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 127%;
+    background-image: url(/icons/shadow.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+}
+
+.magic_shadow_sm{
+    position: relative;
+    background: var(--heaven);
+}
+
+.magic_shadow_sm::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 127%;
+    background-image: url(/icons/shadow-sm.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+}
+
+/* FOR BUTTON PRIMARY COLOR  */
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    padding: 0.65rem 0.75rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border: 2px solid transparent;
+}
+
+.btn_primary{
+    background-color: var(--primary2);
+    color: var(--secondary);
+}
+
+.btn_primary:hover{
+    background-color: var(--secondary);
+    color: var(--primary2);
+}
+
+.btn_secondary{
+    background-color: var(--secondary);
+    color: var(--heaven);
+    border: 2px solid black;
+}
+
+.btn_secondary:hover{
+    background-color: var(--heaven);
+    color: var(--secondary);
+}
+
+
+/* SECTION HEADING */
+.section_heading{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    color: var(--footer);
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+.section_heading::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 30px;
+    background: url(/icons/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -35px;
+}
+
+/* FOR HR  */
+hr {
+    border: 1px solid var(--ternary);
+    opacity: 0.5;
+    margin: 0.7rem auto;
+    width: 11rem;
+}
+
+/* FOR CENTRING THE TEXT  */
+.text_center{
+    text-align: center;
+}
