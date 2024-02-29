@@ -1,0 +1,804 @@
+/* HEADER SECTION STARTS */
+
+header {
+    background-color: var(--dark);
+}
+
+header nav {
+    padding: 1.3rem 0;
+}
+
+header nav .nav_left .logo img {
+    width: 56px;
+}
+
+header nav .nav_left p {
+    color: var(--primary);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+header nav .nav_right .links {
+    margin-right: 5rem;
+}
+
+header nav .nav_right .links a {
+    color: var(--pure2);
+    margin-right: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease-in;
+    border-bottom: 1.5px solid transparent;
+}
+
+header nav .nav_right .links a:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    border-radius: 2px;
+    padding-bottom: 0.1rem;
+}
+
+
+/* HEADER SECTION ENDS */
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+/* MAIN SECTION STARTS */
+
+main.hero {
+    background-color: var(--dark2);
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 80%, 0 100%); */
+    /* clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); */
+    padding: 2rem 0;
+}
+
+
+main.hero .hero_left img {
+    width: 90%;
+}
+
+main.hero .hero_right h4 {
+    font-size: 1.6rem;
+    color: var(--white_tint);
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+main.hero .hero_right h1 {
+    color: var(--gray_tint);
+    text-transform: uppercase;
+    font-size: 2.15rem;
+    letter-spacing: 1px;
+    margin-top: 0.5rem;
+    word-spacing: 2px;
+}
+
+main.hero .hero_right h1 span {
+    color: var(--red_tint);
+}
+
+main.hero .hero_right p {
+    color: var(--white_tint2);
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+/* MAIN SECTION ENDS */
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+/* ABOUT ME SECTION STARTS  */
+
+section.about {
+    padding: 3rem 0;
+    background-color: var(--light2);
+}
+
+section.about .about_left img {
+    width: 85%;
+}
+
+section.about .about_right h4 {
+    font-size: 1.68rem;
+    color: var(--ternary2);
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin-bottom: 0.4rem;
+}
+
+section.about .about_right h4 span {
+    color: var(--gray_tint);
+}
+
+section.about .about_right h2 {
+    font-size: 1.98rem;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 0.4rem;
+}
+
+section.about .about_right h2 span {
+    text-transform: uppercase;
+    color: var(--red_tint);
+}
+
+section.about .about_right p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 0.6rem;
+    font-weight: 500;
+    word-spacing: 1px;
+    color: var(--secondary);
+}
+
+section.about .about_right ul li {
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+}
+
+section.about .about_right ul li span {
+    color: var(--dark2);
+    margin-right: 6px;
+    position: relative;
+    top: 3px;
+    font-size: 20px;
+}
+
+section.about .about_right .social_link p {
+    margin-top: 0.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+section.about .about_right .social_link a {
+    font-size: 1.5rem;
+    margin-right: 7px;
+    color: #673ab7;
+}
+
+/* ABOUT ME SECTION ENDS  */
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+/* SERVICES SECTION STARTS */
+
+section.services {
+    background: var(--dark);
+    padding: 3rem 0 6rem 0;
+}
+
+section.services .section_heading+p {
+    color: var(--light);
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+section.services .card_wrapper {
+    padding: 0 0.8rem;
+}
+
+section.services .card_wrapper .card {
+    background: var(--ternary2);
+    padding: 1.5rem 0.8rem;
+    text-align: center;
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+section.services .card_wrapper .card span {
+    font-size: 1.2rem;
+    background: #c9c9c9;
+    padding: 0.9rem;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    color: #343434;
+    border-radius: 2px;
+    border: 2px solid transparent;
+}
+
+section.services .card_wrapper .card h2 {
+    margin-top: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--light);
+    margin-bottom: 0.6rem;
+    font-size: 1.5rem;
+}
+
+section.services .card_wrapper .card p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: var(--white_tint2);
+}
+
+
+section.services .card_wrapper .card:hover {
+    background: #ededf0;
+    box-shadow: rgba(204, 204, 204, 0.35) 0px 5px 15px;
+    top: -0.4rem;
+}
+
+section.services .card_wrapper .card:hover span {
+    background: #1c1b1b;
+    color: var(--light2);
+    border-color: var(--dark2);
+}
+
+section.services .card_wrapper .card:hover h2 {
+    color: #151515;
+}
+
+section.services .card_wrapper .card:hover p {
+    color: #474747;
+}
+
+/* SERVICES SECTION ENDS */
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+/* FREELANCING SECTION STARTSS */
+
+section.freelance {
+    background: linear-gradient(rgb(0 0 0 / 82%),
+            rgb(0 0 0 / 82%)), url(/images/frelanceback.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 5rem 0;
+    border-top: 7px solid var(--red_tint);
+    border-bottom: 7px solid var(--gray_tint);
+}
+
+
+section.freelance h3 {
+    font-size: 2.1rem;
+    color: var(--gray_tint);
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    margin-bottom: 1rem;
+}
+
+section.freelance p {
+    color: var(--light);
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0px;
+    word-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+/* FREELANCING SECTION ENDS */
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+/* CLIENT SECTION STARTS */
+
+section.clients {
+    padding: 4rem 0;
+    text-align: center;
+    background: var(--light2);
+}
+
+
+section.clients h1 {
+    color: var(--ternary2);
+}
+
+section.clients p {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+}
+
+section.clients .slider {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+section.clients .slider .slide {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 10rem;
+    background: var(--pure2);
+    width: 100%;
+}
+
+section.clients .slider .slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+section.clients .slider .slide p {
+    font-family: 'Lobster', cursive;
+    text-transform: lowercase;
+    word-spacing: 2px;
+    letter-spacing: 0.5px;
+    margin-bottom: 1rem;
+    color: #272727;
+}
+
+section.clients .slider .slide span {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+section.clients .slider_dots .dots {
+    list-style: none;
+    display: flex !important;
+    justify-content: center;
+
+}
+
+section.clients .slider_dots {
+    margin-top: 2.3rem;
+}
+
+section.clients .slider_dots button {
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    border: none;
+    outline: none;
+    background: var(--gray_tint);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+section.clients .dots li.slick-active button {
+    background: var(--blue);
+    width: 20px;
+    border-radius: 5px;
+}
+
+/* CLIENT SECTION ENDS */
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+/* PROJECTS SECTION STARTS */
+
+section.works {
+    text-align: center;
+    background-color: var(--dark2);
+    padding: 4rem 0;
+}
+
+section.works p {
+    color: var(--light);
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+section.works .project_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    padding: 0 2rem;
+}
+
+
+
+section.works .project_wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+section.works .project_wrapper .card {
+    position: relative;
+    height: 200px;
+}
+
+section.works .project_wrapper .card .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(81 75 87 / 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+section.works .project_wrapper .card:hover .overlay {
+    opacity: 1;
+}
+
+section.works .project_wrapper .card .overlay span {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: black;
+}
+
+section.works .project_wrapper .card .overlay a {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--pure);
+}
+
+/* PROJECTS SECTION ENDS */
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+/* BLOG SECTION STARTS */
+
+section.blog {
+    padding: 5rem 0;
+    background-color: var(--light2);
+}
+
+section.blog h1 {
+    color: var(--dark2);
+}
+
+section.blog p {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    margin-top: 0.7rem;
+    margin-bottom: 2rem;
+    color: var(--secondary);
+    text-align: center;
+}
+
+section.blog .blog_wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+    padding: 0 2rem;
+}
+
+section.blog .blog_wrapper .blogs {
+    padding-bottom: 1rem;
+    background: var(--light);
+    transition: all 0.3s ease;
+    border: 2px solid var(--white_tint);
+    border-radius: 4px;
+}
+
+section.blog .blog_wrapper .blogs:hover {
+    background: var(--dark);
+    border-color: var(--dark2);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+section.blog .blog_wrapper .img_wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    border-bottom: 2px solid var(--dark2);
+}
+
+section.blog .blog_wrapper .blogs .blog_contant {
+    padding: 0 1.1rem;
+    transition: all 0.3s ease;
+}
+
+section.blog .blog_wrapper .blogs .blog_contant a {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+section.blog .blog_wrapper .blogs:hover .blog_contant a {
+    color: var(--blue_shade);
+}
+
+section.blog .blog_wrapper .blogs .blog_contant span {
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+section.blog .blog_wrapper .blogs:hover .blog_contant span {
+    color: var(--red_tint);
+}
+
+section.blog .blog_wrapper .blogs .blog_contant p {
+    text-align: left;
+    font-size: 0.8rem;
+    text-transform: lowercase;
+    line-height: 1.4;
+    color: var(--ternary2);
+}
+
+section.blog .blog_wrapper .blogs:hover .blog_contant p {
+    color: var(--white_tint)
+}
+
+section.blog .blog_wrapper .blogs:hover .blog_contant button {
+    border-color: var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+}
+
+section.blog .blog_wrapper .blogs .blog_contant button:hover {
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+/* BLOG SECTION ENDS */
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+/* CONTACT SECTION STARTS */
+
+section.contact {
+    padding: 4rem 0;
+    background: var(--dark);
+}
+
+section.contact p {
+    color: var(--light);
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+section.contact .contact_info {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.contact .contact_info .icon span {
+    color: var(--blue);
+    font-size: 1.5rem;
+}
+
+section.contact .contact_info .info h4 {
+    color: var(--gray_tint);
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+}
+
+section.contact .contact_info .info span {
+    color: var(--white_tint);
+    font-size: 0.9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+
+section.contact form .input_wrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    width: 80%;
+    margin: 4rem auto 0rem auto;
+}
+
+section.contact form .input_wrap_2 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+section.contact input {
+    padding: 0.6rem;
+    background: transparent;
+    border: 2px solid var(--light2);
+    color: var(--pure);
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    outline: none;
+}
+
+section.contact input::placeholder,
+textarea::placeholder {
+    color: var(--light);
+}
+
+
+
+section.contact form .input_wrap_2 textarea {
+    margin-bottom: 2rem;
+    background: transparent;
+    border: 2px solid var(--white_tint2);
+    padding: 0.6rem;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+}
+
+
+/* CONTACT SECTION ENDS */
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+footer {
+    background: #000000;
+    padding: 2rem 0;
+}
+
+footer .logo img {
+    width: 45px;
+}
+
+footer .footer_logo p {
+    color: var(--red_tint);
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-left: 7px;
+    letter-spacing: 0.5px;
+    font-weight: 400;
+}
+
+footer .footer_social {
+    margin-left: 3rem;
+}
+
+footer .footer_social a {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: var(--blue_shade);
+    text-align: center;
+}
+
+
+.copyright {
+    color: var(--white_tint2);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: var(--white_tint2);
+    font-size: 1.1rem;
+    margin-left: 3px;
+}
+
+.copyright a:hover {
+    border-bottom: 2px solid var(--red_tint);
+}
+
+/* ------------------------ NEW SECTION ----------------------------------------- */
+
+/* MOBILE NAVIGATION CONTENT  */
+
+.mobile_header{
+    display: none;
+}
+
+.mobile_hadder_container {
+    background: var(--secondary);
+    padding: 0.5rem 3rem;
+}
+
+.mobile_hadder_container .mob_haddere_cont p {
+    color: var(--primary);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.mobile_hadder_container .ham_icon span {
+    color: var(--gray_tint);
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* -------------------- */
+
+.mobile_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background-color: #101010;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    padding-top: 6rem;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+}
+
+.open{
+    transform: translateX(0%);
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+    color: var(--light2);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.close:hover{
+    color: var(--gray_tint);
+}
+
+.mobile_nav ul li {
+    margin-bottom: 1.8rem;
+    padding: 10px 0 10px 4rem;
+    transition: all 0.3s ease;
+}
+
+.mobile_nav ul li:hover{
+    background-color: var(--ternary2);
+}
+
+.mobile_nav ul li span {
+    font-size: 19px;
+    color: var(--red_tint);
+    margin-right: 13px;
+}
+
+.mobile_nav ul li:hover span{
+    margin-right: 13px;
+    color: var(--gray_tint);
+}
+
+.mobile_nav ul li a {
+    color: var(--light);
+    font-size: 1.19rem;
+    letter-spacing: 1.4px;
+}
+
+.mobile_nav ul li:hover a{
+    color: var(--pure);
+}
+
+.mobile_nav button{
+    margin-left: 4rem;
+}
+
+
+/* MOBILE NAVIGATION CONTENT  */

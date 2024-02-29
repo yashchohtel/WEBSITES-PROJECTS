@@ -1,0 +1,153 @@
+/*----- GOOGLE FONTS LINK ------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*----- COLORS VARIABLES -------------------------------------------*/
+
+:root {
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --dark2: #212121;
+    --pure: #FFFFFF;
+    --pure2: #f4f4f4;
+    --ternary: #898989;
+    --ternary2: #575757;
+    --light: #F2F2F2;
+    --light2: #e4e4e4;
+    --secondary: #070606;
+    --blue_shade: #bca4e8;
+    --white_tint: #b5b5b5;
+    --white_tint2: #d1d1d1;
+    --red_tint: #d63e3e;
+    --gray_tint: #23aed8;
+    --blue: #0000ff;
+}
+
+/*----- CSS DEFAULT RESET -------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+li {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+/*----- CONTAINERS STYLE -------------------------------------------*/
+
+.container {
+    max-width: 1152px;
+    padding: 0 5px;
+    margin: 0 auto;
+    /* border: 1px solid yellow; */
+}
+
+/*----- FLEX UTILITY CLASSES -------------------------------------------*/
+
+.flex {
+    display: flex;
+}
+
+.flex_1 {
+    flex: 1;
+}
+
+.flex_column {
+    flex-direction: column;
+}
+
+.item_center {
+    align-items: center;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.justify_between {
+    justify-content: space-between;
+}
+
+.justify_around {
+    justify-content: space-around;
+}
+
+
+/*----- BUTTONS -------------------------------------------*/
+
+.btn {
+    padding: 0.58rem 1.4rem;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.87px;
+    outline: none;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: all 0.3s ease-in;
+}
+
+.btn_primary {
+    background: var(--primary);
+    color: var(--secondary);
+}
+
+.btn_primary:hover {
+    border-color: var(--primary);
+    background-color: transparent;
+    color: var(--primary);
+}
+
+.btn_secondary {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
+.btn_secondary:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+}
+
+/*----- SECTION HEADING -------------------------------------------*/
+
+.section_heading {
+    color: var(--blue_shade);
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section_heading span {
+    color: var(--red_tint);
+}
+
+.three_grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 3rem;
+}
