@@ -1,0 +1,110 @@
+/* FOR 1170PX */
+@media(max-width:1170px) {
+
+    /* general css */
+    .section_subtitle {
+        max-width: 60%;
+    }
+
+    .banner_section {
+
+        .carousel-item {
+            height: 90vh;
+        }
+
+    }
+
+}
+
+/* FOR 991PX */
+@media(max-width:991px) {
+
+    /* general css */
+    .about .banner_section,
+    .prduct .banner_section,
+    .gallery .banner_section,
+    .contact .banner_section {
+        padding-top: 12.5rem;
+        padding-bottom: 3rem;
+    }
+
+    /* for navigation */
+    .header {
+
+        .navbar {
+            background-size: cover;
+            padding: 2rem;
+
+            .navbar-nav {
+                margin-top: 2rem;
+                margin-bottom: 1.5rem;
+
+                .nav-link {
+                    padding: 0.2rem 0.5rem;
+                    margin-bottom: 1rem;
+                }
+
+            }
+
+        }
+
+        .header_right {
+
+            span {
+                padding: 0.2rem;
+            }
+
+        }
+
+    }
+
+
+}
+
+/* FOR 76PX */
+@media(max-width:767px) {
+
+    /* general css */
+
+    body,
+    html {
+        font-size: 8px;
+    }
+
+    .section_subtitle {
+        max-width: 80%;
+    }
+
+    /* banner section */
+    .banner_section {
+        min-height: 70vh;
+
+        .carousel-item {
+            height: 90vh;
+        }
+
+    }
+
+}
+
+/* FOR 590PX */
+@media(max-width:590px) {
+
+    /* general css */
+
+    body,
+    html {
+        font-size: 7px;
+    }
+
+    /* footer */
+
+    .footer_wrapper {
+
+        .form-control {
+            width: 50%;
+        }
+    }
+
+
+}

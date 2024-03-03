@@ -1,0 +1,59 @@
+// products section landing for landing page 
+
+.landing_product_section{
+
+    .product-card{
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        border: 0.2rem solid var(--light-color);
+        padding: 2rem 1rem;
+        transition: all 0.3s ease;
+
+        .product-img{
+            margin-bottom: 4rem;
+            text-align: center;
+        }
+        
+        h3{
+            color: var(--primary-text);
+            text-transform: uppercase;
+        }
+
+        span{
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: var(--secondary-color);text-decoration: line-through;
+            transition: all 0.3s;
+        }
+
+        .rpoduct-detail {
+            position: absolute;
+            bottom: -13rem;
+            right: 0;
+            left: 0;
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: var(--dark-color);
+            transition: all 0.5s ease;
+        }
+
+        &:hover .rpoduct-detail{
+            bottom: 0;
+        }
+
+    }
+
+}
+
+/* for seprate product page */ 
+
+.product{
+
+    .product-details p{
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+    }
+
+}

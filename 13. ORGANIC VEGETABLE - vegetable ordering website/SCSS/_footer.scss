@@ -1,0 +1,121 @@
+.footer_wrapper {
+    background: url(/IMAGES/footer-bg/footer_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    padding-top: 16rem;
+    padding-bottom: 0;
+
+    h5 {
+        color: var(--secondary-color);
+        font-size: 2.5rem;
+        margin-bottom: 1.35rem;
+        text-transform: uppercase;
+    }
+
+    ul {
+        li {
+            margin-bottom: 0.7rem;
+            list-style: none;
+        }
+    }
+
+    .company_details {
+        font-size: 1.6rem;
+        color: var(--text-grey);
+        line-height: 1.3;
+    }
+
+
+    .contact-info {
+        li {
+            a {
+                color: var(--text-grey);
+                font-size: 1.5rem;
+
+                i {
+                    color: var(--secondary-color);
+                    margin-right: 1rem;
+                }
+
+            }
+        }
+    }
+
+    .link-widget {
+        li {
+
+            a {
+                color: var(--text-grey);
+                font-size: 1.6rem;
+                padding-bottom: 0.3rem;
+                position: relative;
+                transition: all 0.3s ease-out;
+                border-bottom: 1px solid transparent;
+
+                &:hover {
+                    color: var(--secondary-color);
+                    border-color: var(--secondary-color);
+                }
+
+
+            }
+        }
+    }
+
+    .social-newtork {
+        a {
+            width: 3.5rem;
+            height: 3.5rem;
+            line-height: 3.2rem;
+            font-size: 1.4rem;
+            margin: 0.5rem;
+            display: inline-block;
+            border: 0.125rem solid var(--text-grey);
+            color: var(--text-grey);
+            text-align: center;
+            border-radius: 100%;
+            transition: all 0.3s cubic-bezier(0.645, 0.45, 0.355, 1);
+
+            &:hover {
+                background-color: var(--secondary-color);
+                border-color: var(--secondary-color);
+                color: var(--text-white);
+                transform: translateY(-0.1825rem);
+            }
+
+        }
+    }
+
+    .form-control {
+        font-size: 2rem;
+        color: var(--text-white);
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: var(--secondary-color);
+        }
+
+    }
+
+    .copyright-section {
+        background-color: var(--secondary-color);
+        text-align: center;
+        margin-top: 5rem;
+        border-right: 1px solid var(--primary-text);
+
+        p {
+            margin-top: 0;
+            padding: 2rem 0;
+            line-height: 0;
+            text-transform: uppercase;
+            font-size: 1.9rem;
+            font-weight: 600;
+            letter-spacing: 0.06rem;
+            word-spacing: 1px;
+        }
+
+    }
+
+}

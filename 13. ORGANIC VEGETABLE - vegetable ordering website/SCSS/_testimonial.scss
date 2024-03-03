@@ -1,0 +1,55 @@
+.testimonial_section{
+
+    background-color: var(--light-color);
+
+    .carousel-indicators{
+        bottom: -5rem;
+
+        button{
+            background-color: var(--dark-color);
+            width: 1.2rem;
+            height: 1.2rem;
+            border-radius: 50%;
+        }
+
+    }
+
+    .card{
+        background: url(/IMAGES/testimonial/testimonial-bg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: right;
+        padding: 5rem 5rem 5rem 0;
+        border-radius: 0 .5rem .5rem 0;
+        border: 0.1rem solid transparent;
+    }
+
+    .profile-box{
+        padding: 1.7rem;
+        background-color: var(--dark-color);
+        border-radius: .5rem 0 0 .5rem;
+
+        img{
+            border-radius: 1rem;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .desc-box{
+        padding-left: 2.5rem;
+    }
+
+}
+
+/* GALLERY SECTION */ 
+
+.gallery_section{
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

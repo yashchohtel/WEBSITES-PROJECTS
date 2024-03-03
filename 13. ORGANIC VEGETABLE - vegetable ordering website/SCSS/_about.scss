@@ -1,0 +1,31 @@
+/* landing page css */
+
+.landing_about_section {
+    background: url(../IMAGES/about/about-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 9rem 0;
+
+    p {
+        color: var(--primary-text);
+    }
+
+}
+
+/* seprate page css */
+
+.about {
+
+    .about-details {
+
+        p {
+            color: var(--primary-text);
+            font-size: 1.6rem;
+            font-weight: 500;
+
+        }
+
+    }
+
+}
