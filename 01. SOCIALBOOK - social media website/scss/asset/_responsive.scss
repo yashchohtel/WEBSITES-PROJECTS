@@ -1,0 +1,499 @@
+// MEDIA FOR SCREEN WIDTH UNDER 1150PX
+@media (max-width:1150px) {
+
+    /* HEADER */
+    .header .container .desktop-header .header-left .search-box {
+        width: 210px;
+    }
+
+    .header .container .header-middle .icon-box {
+        width: 75px;
+    }
+}
+
+// MEDIA FOR SCREEN WIDTH UNDER 1050PX
+@media (max-width:1050px) {
+
+    /* HEADER */
+    .header .container .header-left .search-box {
+        display: none;
+    }
+
+    .header .container .header-left .small-search-box {
+        display: block;
+    }
+
+    // style for create page
+    .create-section .create-container .post-select-wrapper .images {
+        grid-template-rows: repeat(6, 250px);
+        height: 1050px;
+    }
+
+    /* HOME SECTION  */
+
+    // sidebar
+    .main-home.container .left-sidebar {
+        width: auto;
+    }
+
+    .main-home.container .left-sidebar .links-container .links .nav-links {
+        justify-content: center;
+    }
+
+    .main-home.container .left-sidebar .links-container .links .nav-links h3 {
+        display: none;
+    }
+
+    // post section
+    .main-home.container .post-section {
+        width: 53%;
+    }
+
+    /* PROFILE SECTION */
+
+    .profile-section .profile-section-container .profile-section-top {
+        padding: 0 0 0 0;
+        border-bottom: none;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .left {
+        display: none;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right {
+        width: 100%;
+        padding: 0 10px 10px 10px;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .profile-numbers {
+        order: 3;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 11px 0px;
+        border-top: 1.5px solid var(--bg-white-4);
+        border-bottom: 1.5px solid var(--bg-white-4);
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .profile-numbers p {
+        margin: 0 35px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        span {
+            color: var(--gray-light-2);
+        }
+
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .right-head .left-image {
+        display: inline-block;
+    }
+
+    /* EXPLORE SECTION */
+    .explore-section .explore-section-container {
+        width: 85%;
+    }
+
+    /* SHOP SECTION */
+    .shop-section .shop-items-container {
+        width: 85%;
+    }
+
+    /* FIND FRIEND SECTION */
+    .group-section .find-friend-container {
+        width: 85%;
+    }
+
+}
+
+// MEDIA FOR SCREEN WIDTH UNDER 920PX
+@media (max-width:920px) {
+
+    /* HOME SECTION  */
+    .main-home.container .aside-section {
+        display: none;
+    }
+
+    .main-home.container .post-section {
+        width: 70%;
+        margin: 70px auto 20px auto;
+    }
+
+    /* PROFILE PAGE */
+    .profile-section .profile-section-container .profile-section-top .right .right-head .right-info {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .profile-name {
+            margin-bottom: 12px;
+        }
+
+    }
+
+    .profile-section .profile-section-container .profiles-post {
+        grid-template-rows: repeat(3, 200px);
+        gap: 15px 10px;
+
+    }
+
+    /* EXPLORE SECTION */
+    .explore-section .explore-section-container .explore-section-post {
+        grid-template-rows: repeat(6, 230px);
+        gap: 15px 10px;
+
+    }
+
+    /* SHOP SECTION */
+    .shop-section .shop-items-container .product-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 250px);
+    }
+
+    /* SHOP SECTION */
+    .group-section .find-friend-container .friends-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 290px);
+    }
+
+}
+
+// MEDIA FOR SCREEN WIDTH UNDER 750PX
+@media (max-width:750px) {
+
+    /* HEADER */
+
+    .header {
+        padding: 6px 0;
+    }
+
+    .header .container .header-left,
+    .header .container .header-middle,
+    .header .container .header-right {
+        display: none;
+    }
+
+    .header .container .tab-header-left {
+        display: block;
+    }
+
+    .header .container .tab-header-right {
+        display: flex;
+    }
+
+    // navigation on bottom
+    .navigation {
+        display: block;
+        border-top: 1px solid var(--bg-white-5);
+    }
+
+    /* HOME PAGE */
+
+    .main-home.container .post-section {
+        width: 98%;
+    }
+
+    .main-home.container .left-sidebar {
+        display: block;
+        z-index: 110;
+        width: 60%;
+        position: fixed;
+        left: -150%;
+        transition: all 0.2s ease;
+
+        &.active {
+            left: 0;
+        }
+
+    }
+
+    .main-home.container .left-sidebar .profile-darkBtn {
+        display: flex;
+    }
+
+    .main-home.container .left-sidebar .links-container .links .nav-links {
+        justify-content: left;
+    }
+
+    .main-home.container .left-sidebar .links-container .links .nav-links.nav-profile {
+        display: none;
+    }
+
+    .main-home.container .left-sidebar .links-container .links .nav-links h3 {
+        display: block;
+    }
+
+    .main-home.container .post-section {
+        margin: 70px auto 80px auto;
+    }
+
+    // profile section
+    .main-home.container {
+        justify-content: center;
+    }
+
+    .profile-section .profile-section-container {
+        width: 100%;
+        margin: 70px 0;
+
+    }
+
+    /* EXPLORE SECION */
+    #explore-header {
+        display: none;
+    }
+
+    .explore-section .explore-section-container .searchbar {
+        display: block;
+    }
+
+    .explore-section .explore-section-container {
+        width: 100%;
+        padding: 10px 0;
+        margin: 0px 0px 70px;
+    }
+
+    /* SHOP SECTION */
+    .shop-section .shop-items-container {
+        width: 100%;
+        padding: 10px;
+        margin: 70px auto;
+    }
+
+    /* FOND FRIEND  SECTION */
+    .group-section .find-friend-container {
+        width: 100%;
+        padding: 10px;
+        margin: 70px auto 10px;
+    }
+
+}
+
+// MEDIA FOR SCREEN WIDTH UNDER 600PX
+@media (max-width:600px) {
+
+    // style for navigation
+    .main-home.container .left-sidebar {
+        width: 85%;
+    }
+
+    // what in our mind 
+
+    .main-home.container .post-section .what-on-mind {
+        padding: 10px;
+        margin: 10px 0;
+
+    }
+
+    .main-home.container .post-section .what-on-mind .bottom .share-box {
+        flex-direction: column;
+
+        p {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+    }
+
+    // profile section 
+    .profile-section .profile-section-container {
+        padding: 0px;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .right-head {
+        margin-top: 0px;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right {
+        padding: 8px;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .right-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .right-head .left-image {
+        display: flex;
+        align-items: center;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .right-head .left-image .name {
+        display: flex;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .right-head .right-info {
+        margin-top: 10px;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .right-head .right-info .profile-name {
+        display: none;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .right-head .right-info .profile-action {
+        margin-top: 10px;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .right-head .right-info .profile-action .btn {
+        margin-right: 10px;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .profile-discription p {
+        font-size: 0.9rem;
+        letter-spacing: 0;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .profile-numbers p {
+        font-size: 0.9rem;
+    }
+
+    .profile-section .profile-section-container .profiles-post {
+        grid-template-rows: repeat(3, 150px);
+        gap: 2px 2px;
+    }
+
+    .profile-section .profile-section-container .profiles-post .post-image .like-comment {
+        position: absolute;
+        color: white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        font-size: 0.8rem;
+    }
+
+
+    /* EXPLORE SECTION */
+    .explore-section .explore-section-container .explore-section-post {
+        grid-template-rows: repeat(6, 175px);
+        gap: 3px 3px;
+    }
+    
+    /* SHOP SECTION */
+    .shop-section .shop-items-container .product-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 250px);
+    }
+
+    /* FND FRIEND SECTION */
+    .group-section .find-friend-container .friends-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 290px);
+    }
+
+    /* PRELOADER */ 
+    .loader-container{
+        
+        img {
+            height: 6rem;
+        }
+
+        h1{
+            font-size: 2rem;
+        }
+        
+    } 
+}
+
+// MEDIA FOR SCREEN WIDTH UNDER 430PX
+@media (max-width:430px) {
+
+    // HEADER SECTION
+    // mobie headr
+    .header .container .tab-header-left .logo {
+        letter-spacing: 0px;
+        font-size: 1.3rem;
+    }
+
+    .header .container .tab-header-right .mobile-header-btn {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header .container .tab-header-right .mobile-header-btn .count {
+        height: 13px;
+        width: 13px;
+        font-size: 0.5rem;
+    }
+
+    .header .container .tab-header-right .mobile-header-btn i {
+        font-size: 0.85rem;
+    }
+
+    // HOME SECTION
+
+    // post section
+    .main-home.container .post-section {
+        margin: 70px auto 80px auto;
+    }
+
+    // story
+    .main-home.container .post-section .story-container {
+        background: var(--bg-white);
+        padding: 6px;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    .main-home.container .post-section .story-container .story-box .image {
+        width: 55px;
+        height: 55px;
+    }
+
+    .main-home.container .post-section .story-container .story-box .image img {
+        width: 93%;
+        border: 1.5px solid white;
+    }
+
+    .main-home.container .post-section .story-container .story-box .name {
+        font-size: 0.6rem;
+        font-weight: 400;
+        margin-top: 2px;
+        width: 50px;
+    }
+
+    // find friend carosel
+    .main-home.container .post-section .find-friends .find-box {
+        width: 95%;
+        margin: 0 auto 10px;
+    }
+
+    // profile section 
+
+    .profile-section .profile-section-container {
+        margin-top: 70px;
+    }
+
+    .profile-section .profile-section-container .profile-section-top .right .profile-numbers p {
+        margin: 0px 20px;
+    }
+
+    /* EXPLORE SECTION */
+    .explore-section .explore-section-container .explore-section-post {
+        grid-template-rows: repeat(6, 130px);
+    }
+    
+    /* SHOP SECTION */
+    .shop-section .shop-items-container .product-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 250px);
+    }
+
+    .shop-section .shop-items-container {
+        margin: 70px auto 70px;
+    }
+
+    /* FIND FRIEND SECTION */
+
+    .group-section .find-friend-container {
+        margin: 70px auto 10px;
+    }
+
+    .group-section .find-friend-container .friends-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(12, 290px);
+    }
+
+}

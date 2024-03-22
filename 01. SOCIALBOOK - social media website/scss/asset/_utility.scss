@@ -1,0 +1,181 @@
+/* ---------- GOOGLE FONTS ------------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* ---------- ROOT VATIABLE ------------------------------------ */
+
+:root {
+
+    // background colors
+    --bg-white: #ffffff;
+    --bg-white-2: #f0f2f5;
+    --bg-white-3: #e4e6eb;
+    --bg-white-4: #cfcfcf;
+    --bg-white-5: #e7f3ff;
+    --bg-yellow: #ffbd01;
+    --bg-red: #ff2424;
+    --bg-gray: #53575c;
+    --bg-primary-blue: #1b74e4;
+
+    --bg-black-100: rgba(92, 92, 92, 0.1);
+    --bg-black-500: rgba(92, 92, 92, 0.5);
+    --bg-black-700: rgba(92, 92, 92, 0.7);
+
+    // text-color
+    --gray-light: #65676b;
+    --gray-light-2: #8e8e8e;
+    --black-light: #00000026;
+    --primary-blue: #1b74e4;
+    --blue-2: #1876f2;
+    --black-900: #050505;
+    --black-2: #323232;
+    --black-3: #262626;
+    --text-white: #fff;
+    --color-voilet: #551a8b;
+    --light-red: #ed4956;
+
+    // box shadow
+    --shadow-1: 0px 4px 6px 0px rgba(99, 99, 99, 0.2);
+    --shadow-2: 6px 6px 4px 0px rgba(99, 99, 99, 0.2);
+    --shadow-3: 0px 3px 8px rgba(0, 0, 0, 0.24);
+    --shadow-4: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    --shadow-5: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    // fonts
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Oleo Script', cursive;
+
+}
+
+
+/* ---------- REFORMATING -------------------------------------- */
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg-white-2);
+    font-family: var(--primary-font);
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(203, 203, 203);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ---------- REUSABLE CLASS -------------------------------------- */
+
+// overlay
+.black-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 105;
+    background-color: #000;
+    opacity: 0;
+    display: none;
+    transition: all 0.3s ease;
+
+    &.active {
+        display: block;
+        opacity: 0.4;
+    }
+
+}
+
+// scrollbar
+.has-scrollbar {
+    padding-bottom: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+
+.has-scrollbar:hover::-webkit-scrollbar-thumb {
+    background: var(--bg-black-500);
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: var(--bg-black-700);
+}
+
+
+// container
+.container {
+    width: 97%;
+    max-width: 1295px;
+    margin: 0 auto;
+}
+
+// mobile view container
+.mobile-view-container {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+}
+
+.online {
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 12px;
+        width: 12px;
+        background-color: var(--bg-yellow);
+        z-index: 10;
+        position: absolute;
+        bottom: 1px;
+        right: 0;
+        border: 2px solid white;
+        border-radius: 50%;
+    }
+}
+
