@@ -1,4 +1,5 @@
 
+
 // NAVBAR OPEN AND CLOSE
 
 const navOpen = document.querySelector("#nav-open");
